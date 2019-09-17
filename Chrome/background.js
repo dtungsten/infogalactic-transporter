@@ -1,4 +1,4 @@
-var wikiIdentifier = 'wikipedia.org/wiki'
+var wikiIdentifier = 'en.wikipedia.org/wiki'
 var igIdentifier = 'infogalactic.com/info'
 var redirectedArray = {}
 
@@ -40,7 +40,7 @@ chrome.webRequest.onBeforeRequest.addListener(
       }
     }
   },
-  {urls: ['*://*.wikipedia.org/*'], types: ['main_frame', 'sub_frame', 'stylesheet', 'script', 'image', 'object', 'xmlhttprequest', 'other']},
+  {urls: ['*://en.wikipedia.org/*'], types: ['main_frame', 'sub_frame', 'stylesheet', 'script', 'image', 'object', 'xmlhttprequest', 'other']},
   ['blocking']
 )
 
